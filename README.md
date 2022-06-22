@@ -1,10 +1,24 @@
-# MBRL2 (Model Based Regularization for Bayesian Reinforcement Learning)
-Code for the paper - "Meta Reinforcement Learning with Finite Training Tasks - a Density Estimation Approach". 
+<p align="center"><h1 align='center' class="header-title" style="font-family:'Nunito';"><a href="#">
+Meta Reinforcement Learning with Finite Training Tasks - a Density Estimation Approach</a>
+</h1> <p align="center">
+ <br/> By Zohar Rimon, Aviv Tamar and Gilad Adler <br />
+<br /> <a href="https://github.com/zoharri/ReId/issues">Report Bug</a> <br />
+<img src="gifs/all_goals.gif"></p></p>
+
+
 
 This code is based on the open-sourced VariBad repository of Zintgraf et al -
 https://github.com/lmzintgraf/varibad.
-For general overview of the repository, requirements and hyperparameters we refer the reader 
+For general overview of the repository, we refer the reader 
 to the original VariBad repository.
+
+#Requirements
+The requirements can be found in requirements.txt. One can create a sufficient conda environment with:
+```sh
+   conda create -n mbrl2 python=3.7
+   pip install -r requirements.txt
+   ```
+
 
 # Dream Environments Options
 Besides the config options introduces in the VariBad repo, 
@@ -22,18 +36,30 @@ Besides the config options introduces in the VariBad repo,
 12. **clone_dream_vae** - use a different vae for the dream environments
 
 # Reproducing Results
-In order to reproduce the results shown in the paper:
-1. For the 20 real training environments and 4 dream environment:
+In order to reproduce the experiments shown in the paper:
+1. For the 20 real training environments and 4 dream environments experiment:
    ```sh
    python main.py --exp_name 20_train_4_kde_dream --env_type pointrobot_varibad\
                   --env_num_train_goals 20 --num_dream_envs 4
    ```
    
-2. For the 30 real training environments and 6 dream environment:
+2. For the 30 real training environments and 6 dream environments experiment:
    ```sh
    python main.py --exp_name 30_train_6_kde_dream --env_type pointrobot_varibad \
                   --env_num_train_goals 30 --num_dream_envs 6
    ```
 
-In order to use Mixup dream environments instead of the KDE, add the --use_mixup flag.  
+In order to use Mixup dream environments instead of the KDE, add the --use_mixup flag. 
+
+To reproduce the exact figures from the paper one need to run all the seeds specified in utils/plot_helpers.py (for a specific experiment) and run utils/plot_helpers.py.
+
+For example, to reproduce the 30 real training environments experiment (VariBad vs VariBad dream) run seeds:
+```python
+seeds = [3, 13, 23, 33, 43, 53, 63, 73, 83, 93, 103, 200, 201, 202, 203]
+```
+
+# Contact
+Zohar Rimon -  zohar.rimon@gmail.com
+
+# Citation
 
