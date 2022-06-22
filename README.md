@@ -12,7 +12,7 @@ https://github.com/lmzintgraf/varibad.
 For general overview of the repository, we refer the reader 
 to the original VariBad repository.
 
-#Requirements
+# Requirements
 The requirements can be found in requirements.txt. One can create a sufficient conda environment with:
 ```sh
    conda create -n mbrl2 python=3.7
