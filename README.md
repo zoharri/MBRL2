@@ -6,7 +6,20 @@ Meta Reinforcement Learning with Finite Training Tasks - a Density Estimation Ap
 <img src="gifs/all_goals.gif"></p></p>
 
 
-
+Official implementation of the paper <a href="https://arxiv.org/abs/2206.10716">
+Meta Reinforcement Learning with Finite Training Tasks - a Density Estimation Approach</a>. 
+# Citation
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="@inproceedings{zintgraf2020varibad,
+  title={Meta Reinforcement Learning with Finite Training Tasks - a Density Estimation Approach},
+  author={Rimon, Zohar and Tamar, Aviv and Adler, Gilad},
+  booktitle={Neural Information Processing Systems (NeurIPS)},
+  year={2022}}"><pre class="notranslate"><code>@inproceedings{rimon2022mbrl2,
+  title={Meta Reinforcement Learning with Finite Training Tasks - a Density Estimation Approach},
+  author={Rimon, Zohar and Tamar, Aviv and Adler, Gilad},
+  booktitle={Neural Information Processing Systems (NeurIPS)},
+  year={2022}}
+</code></pre></div>
+# General
 This code is based on the open-sourced VariBad repository of Zintgraf et al -
 https://github.com/lmzintgraf/varibad.
 For general overview of the repository, we refer the reader 
@@ -61,5 +74,5 @@ seeds = [3, 13, 23, 33, 43, 53, 63, 73, 83, 93, 103, 200, 201, 202, 203]
 # Contact
 Zohar Rimon -  zohar.rimon@gmail.com
 
-# Citation
+
 
